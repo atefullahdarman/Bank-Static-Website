@@ -1,17 +1,17 @@
 
 :root{
-    --primary: #0d47a1;
-    --secondary: #1976d2;
+    --primary: #218b8a;
+    --secondary: #2b9fb4;
     --accent: #00c853;
     --danger: #e53935;
     --light: #f5f5f5;
     --dark: #212121;
-
+    --gray:#d7dbdfd2;
     --radius: 0.6em;
     --transition: 0.3s ease;
 }
 
-/* reset */
+/* universal tag */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
 
 body{
     font-size:1rem;
-    
+   font-family: Arial,Helvetica, sans-serif;
 }
 
 main{
@@ -30,26 +30,20 @@ main{
 /* header */
 
 .header {
-    background: var(--primary);
+    background: linear-gradient(var(--primary),var(--secondary));
     color:var(--light);
     padding:0.6em;
-    position:center;
     top: 0;
     z-index: 1000;
     border-radius: 0.6em;
     
 }
 
-.icons{
-    width: 1.1em;
-    height: auto;
-}
 .nav {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    
-   
+    flex-wrap: wrap;
 }
 
 .menu{
@@ -67,21 +61,26 @@ main{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    transition:all 0.5s;
+    transition: var(--transition);
 }
 .menu li a:hover{
     color:var(--dark);
     background: var(--light);
-    padding: 5px;
-    border-radius: 5px;
+    padding:0.5em;
+    border-radius:var(--radius) ;
+    
 }
 
 #logo{
-    width: 5em;
+    max-width: 3.5em;
     height: auto;
     margin-right: 1.2em;
 }
-/* buttons */
+
+.icons{
+    width: 1.1em;
+    height: auto;
+}
 .buttons{
   display: flex;
   gap: 1em;
@@ -112,11 +111,11 @@ main{
 
 /* hero */
 .hero {
-    background-image: url(../images/1774893726908.png);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding:2em;
+    background-image: url(../images/hero.png);
+    background-position:center;
+    background-size:cover;
+    color: var(--light);
+    padding:1.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,32 +125,43 @@ main{
 }
 
 .hero-text {
-    max-width: 50%;
-    background: rgba(13,71,161,0.9);
+    max-width: 40%;
+    background:linear-gradient(var(--primary),var(--secondary));
     padding: 1em;
     border-radius: var(--radius);
     animation: fadeIn 1s ease;
 }
-
 .hero-buttons{
     display: flex;
-    gap: 1em;
+    gap: 1.3em;
+    justify-content: center;
     margin-top: 1em;
 }
-
-.hero-image img{
-    width: 15em;
-    height: 15em;
-    border-radius: var(--radius);
+#buttone{
     transition: var(--transition);
-    filter:opacity(0.7);
+    cursor: pointer;
+}
+.hero-buttons .primary_butt{
+    padding: 0.6em;
+     border-radius: var(--radius);
+     color:var(--light);
+     background: var(--accent);
+      border: 2px solid grey;
+      transform: scale(1.05);
+    
+}
+.hero-buttons .secondary_butt{
+    padding: 0.6em;
+     border-radius: var(--radius);
+     background: none; 
+     color: var(--light);
+     border: 2px solid grey;
+     transform: scale(1.05);
+}
+.hero-buttons .secondary_butt:hover{
+    background: var(--accent);
 }
 
-.hero-image img:hover{
-    transform: scale(1.05);
-}
-
-/* animation */
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -163,106 +173,109 @@ main{
     }
 }
 
+.hero-image img{
+    width: 15em;
+    height: auto;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    filter:opacity(0.6);
+}
+
+.hero-image img:hover{
+    transform: scale(1.05);
+}
+
 /* section title */
 .section-title {
     text-align: center;
     margin: 1.5em 0;
 }
 
+/* video */
+
 /* services */
-.card_section{
+/* .card_section{
     width: 100%;
     display: flex;
     flex-direction: column;
-} 
+}  */
 
-.grid {
+.grid_contener {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5em;
     padding: 1em;
 }
 
-.card {
-
+.Features {
     display: flex;
     flex-direction: column;
-    background: var(--light);
+    background:linear-gradient(var(--gray),var(--light));
     border-radius: var(--radius);
-    padding: 1.5em;
+    padding: 1.2em;
     align-items: center;
     gap: 0.8em;
     box-shadow: 0 0.3em 0.6em rgba(0,0,0,0.2);
     transition: var(--transition);
 }
 
-.card:hover{
+.Features:hover{
     transform: translateY(-0.5em);
     box-shadow: 0 0.6em 1em rgba(0,0,0,0.3);
 }
 
-.card img{
-    width:100%;
-    max-width: 18em;
+.Features img{
+    width:10em;
     border-radius: var(--radius);
 }
 
-#card_button{
+#Features_Button{
     background: var(--dark);
     padding: 0.5em 1em;
-    color: white;
+    color:var(--light);
     border-radius: var(--radius);
     cursor: pointer;
+    
+}
+
+#Features_Button:hover{
+    background: var(--accent);
     transition: var(--transition);
 }
 
-#card_button:hover{
-    background: var(--accent);
-}
-
-/* description */
-.description {
-    margin: 1em;
-    padding: 1em;
-    border-radius: var(--radius);
-    background: var(--light);
-    text-align: center;
-}
-
-/* CTA */
-.cta {
-    text-align: center;
+/* FAQ */
+.FAQ_Section {
     padding:2em;
-    background: var(--secondary);
-    color: white;
+    background:linear-gradient(var(--primary),var(--secondary));
+    color: var(--light);
     border-radius: 0.6em;
     margin-bottom:1em ;
 }
-
-.primary {
-    background: var(--accent);
-    padding: 0.6em 1em;
-    color: white;
-    border-radius: var(--radius);
-    cursor: pointer;
+.h2_des{
+    text-align: center;
+    
+}
+.FAQ{
+    display: flex;
+    justify-content:center;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
-.secondary{
-  padding: 0.6em 1em;
-  border-radius: var(--radius);  
-  cursor: pointer;
+.faq-item h3{
+    color: var(--dark);
 }
 
-.secondary:hover{
- background: var(--accent);   
+.content p{
+    color: var(--light);
 }
-
 /* footer */
 .footer {
     display: flex;
     justify-content: space-between;
-    background: var(--primary);
-    color: white;
+    background:linear-gradient(var(--primary),var(--secondary));
+    color:var(--light);
     padding: 2em;
     flex-wrap: wrap;
     gap: 1em;
@@ -282,11 +295,11 @@ main{
 #footer_p{
     text-align:center;
 }
-/* responsive */
 
-/* tablet */
+/* responsive */
+/* tab */
 @media (max-width: 64em) {
-    .grid {
+    .grid_contener {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -307,14 +320,14 @@ main{
     }
 }
 
-/* mobile */
+/* mob */
 @media (max-width: 40em) {
     .menu{
         flex-direction: column;
         gap: 1em;
     }
 
-    .grid {
+    .grid_contener {
         grid-template-columns: 1fr;
     }
 
