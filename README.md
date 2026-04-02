@@ -1,6 +1,6 @@
 🚀 Features
 Account Management
-Create, update, and manage customer bank accounts بسهولة and securely.
+Create, update, and manage customer bank accounts  and securely.
 Transaction Management
 Handle deposits, withdrawals, and transfers with accuracy and speed.
 Customer Management
