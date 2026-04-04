@@ -1,4 +1,5 @@
-🚀 Features
+ Features
+ 
 Account Management
 Create, update, and manage customer bank accounts  and securely.
 Transaction Management
@@ -9,17 +10,21 @@ Loan Management
 Process, approve, and track loans effectively.
 Reports Generation
 Generate financial and operational reports for better decision-making.
-🎯 Objectives
+
+ Objectives
 To reduce manual paperwork and human errors
 To improve efficiency and speed of banking operations
 To provide secure and reliable financial services
 To enhance customer satisfaction
-🛠️ Technologies Used
-HTML
-CSS
-JavaScript (optional for interactivity)
-💡 Advantages
+ Technologies Used
+ 
+.HTML5 
+.CSS 
+
+ Advantages
 Easy to use interface
 Fast and reliable system
 Organized data management
 Improved productivity
+
+Developed by Atefullah Zafar Zoi 
