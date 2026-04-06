@@ -24,12 +24,26 @@
     margin-bottom: 1em;
     overflow-x: auto;
 }
-.h2{
-    padding: 1em;
+h2{
     color: var(--primary);
-    display: flex;
-    flex-wrap: wrap;
 }
+#tran_photo{
+     width: 5em;
+    height: auto;
+}
+.li_transaction{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--secondary);
+    font-size:medium;
+    list-style-type: none;
+    padding: 1em;
+    padding-right: 1.6em;
+     gap: 0.5em;
+    
+}
+
 table{
   font-size:small;
   width:100%;

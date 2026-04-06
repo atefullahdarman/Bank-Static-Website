@@ -13,11 +13,12 @@
     --radius: 0.6em;
     --transition: 0.3s ease;
 }
-/* this part of the table */
+
+/* table */
+
 .table-container{
     width: 100%;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     gap: 0.4em;
     background:linear-gradient(var(--light),var(--gray));
@@ -26,15 +27,24 @@
     overflow-x: auto;
 }
 
-.h2_button{
+#accout_photo{
+    width: 5em;
+    height: auto;
+}
+.h2_button_li{
     padding: 1em;
     color: var(--primary);
+    font-size: medium;
+    margin-right: 0.7em;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 0.5em;
     flex-wrap: wrap;
 }
 
+.h2_button_li ul li{
+    color: var(--secondary);
+}
 table{
   font-size:small;
   width:100%;
