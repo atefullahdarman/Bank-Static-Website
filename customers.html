@@ -9,10 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> بانک مدیریت سیسټم </title>
   <link rel="stylesheet" href="./Css/style.css">
-  <link rel="stylesheet" href="./Css/account.css">
+  <link rel="stylesheet" href="./Css/customers.css"> 
 </head>
 <body>
-    <main>      
+  <main>      
 <!-- heder -->
     <header class="header">
     <nav class="nav">
@@ -38,103 +38,115 @@
     </nav>
 </header>
 
-<div class="h2_button_li">
-  <img src="./images/check.png" alt="user_accont photo" id="accout_photo">
-  <h2> د  حسابونو مدیریت</h2>
+ <div class="section_customers">
+  <img src="./images/customer-satisfaction.png" alt="customers photo" id="customers">
+   <h2>د مشتریانود معلوماتو مدیریت</h2>
   <ul>
-    <li>اډمین او کارکوونکی کولی شی د مشتریانوحسابونه جوړ تازه اویا حذف کړی.</li>
-    <li>هر حساب به ځانګړی حساب نمبر لري .</li>
-    <li>مشتریان به کولی شي خپل حساب بیالنس او حالت په حقیقي وخت کې وګوري.</li>
+    <li>کارکوونکي به د مشتری شخصی معلومات زیات تازه او حذب کولی شي.</li>
+    <li>سیسټم به معلومات لکه نوم، پته، تلیفون، ایمیل، او پېژند اسناد ذخیره کړي.</li>
+    <li>د معلومات به په منظم ډول کافی اخیستل کېږي د بیا ترالسه کولو لپاره.</li>
   </ul>
-  <button class="add-btn"><b>د نوی اکونت اضافه ➕</b></button>
-</div>
- 
-<section class="table-container">
+ </div>
+
+ <section class="table-container">
   <table>
-    <thead>
-      <tr>
-        <th>اکونت نمبر</th>
-        <th>نوم</th>
-        <th>ایمیل</th>
-        <th>بیالنس</th>
-        <th>حالت</th>
-        <th>عمل</th>
+      <thead>
+        <tr>
+          <th>نوم</th>
+          <th>ایمیل</th>
+          <th>فون نمبر</th>
+          <th>ادرس</th>
+          <th>د پیژندنی سند </th>
+          <th>حالت</th>
+          <th>عمل</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1000</td>
-          <td> عاطف الله</td>
-          <td>atefullahdarman@gmail.com</td>
-          <td>افغانی 90000</td>
-          <td> فعال</td>
-          <td class="button_edit_dele">
-            <button class="edit-btn">تغیر</button>
-            <button class="delete-btn">حذف</button>
-          </td>
-        </tr>
-        <tr>
-          <td>1001</td>
-          <td> بلال</td>
-          <td>bilal123@gmail.com</td>
-          <td>افغانی 50000</td>
-          <td> فعال</td>
+          <td>عاطف</td>
+          <td>atefullah@gmail.com</td>
+          <td>0731597286</td>
+          <td>وردګ</td>
+          <td>پاسپورد</td>
+          <td>فعال</td>
           <td>
             <button class="edit-btn">تغیر</button>
-            <button class="delete-btn">حذف</button>
+            <button class="delete-btn">حذب</button>
+            <button class="copy-btn">کافی</button>
+
           </td>
         </tr>
         <tr>
-          <td>1002</td>
-          <td>فرهاد</td>
-          <td>farhad111@gmail.com</td>
-          <td>افغانی 35000</td>
-          <td>غیر فعال</td>
+          <td>عمران</td>
+          <td>imaran1212@gmail.com</td>
+          <td>0798765432</td>
+          <td>کابل</td>
+          <td>تذکیره</td>
+          <td>غیری فعال</td>
           <td>
             <button class="edit-btn">تغیر</button>
-            <button class="delete-btn">حذف</button>
+            <button class="delete-btn">حذب</button>
+            <button class="copy-btn">کافی</button>
           </td>
         </tr>
         <tr>
-          <td>1003</td>
-          <td>سمیم</td>
-          <td>samim222@gmail.com</td>
-          <td>افغانی 72000</td>
-          <td> فعال</td>
+          <td>معین</td>
+          <td>moien5454@gmail.com</td>
+          <td>0789012345</td>
+          <td>هیرات</td>
+          <td>ماسټر کارد</td>
+          <td>فعال</td>
           <td>
             <button class="edit-btn">تغیر</button>
-            <button class="delete-btn">حذف</button>
+            <button class="delete-btn">حذب</button>
+            <button class="copy-btn">کافی</button>
           </td>
         </tr>
-        <tr>
-          <td>1004</td>
-          <td>علی</td>
-          <td>ali777@gmail.com</td>
-          <td>افغانی 7287</td>
-          <td>غیر فعال</td>
+         <tr>
+          <td>همزه</td>
+          <td>hamza0000@gmail.com</td>
+          <td>0789098745</td>
+          <td>وردګ</td>
+          <td>پاسپورد</td>
+          <td>فغال</td>
+          <td>
+           <button class="edit-btn">تغیر</button>
+            <button class="delete-btn">حذب</button>
+            <button class="copy-btn">کافی</button>
+          </td>
+        </tr>
+         <tr>
+          <td>جلیل</td>
+          <td>jalil5454@gmail.com</td>
+          <td>0780002345</td>
+          <td>کابل</td>
+          <td>ویزه کارت</td>
+          <td>غیری فعال</td>
           <td>
             <button class="edit-btn">تغیر</button>
-            <button class="delete-btn">حذف</button>
+            <button class="delete-btn">حذب</button>
+            <button class="copy-btn">کافی</button>
           </td>
         </tr>
-        <tr>
-          <td>1005</td>
-          <td>نومان</td>
-          <td>nooma222@gmail.com</td>
-          <td>افغانی 8000</td>
-          <td>غیر فعال</td>
-          <td class="button">
-            <button class="edit-btn"  >تغیر</button>
-            <button class="delete-btn" >حذف</button>
+         <tr>
+          <td>جلال</td>
+          <td>jalal5454@gmail.com</td>
+          <td>0780982345</td>
+          <td>غزنی</td>
+          <td>کارد</td>
+          <td>فعال</td>
+          <td>
+            <button class="edit-btn">تغیر</button>
+            <button class="delete-btn">حذب</button>
+            <button class="copy-btn">کافی</button>
           </td>
         </tr>
       </tbody>
     </table>
-</section>
+ </section>
 
 <!-- footer -->
 <footer class="footer">
-
   <div class="Social_link">
     <h4>Social media links</h4>  
     <ul>

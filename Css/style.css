@@ -48,13 +48,13 @@ main{
     justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
   
 }
 
 .menu{
     list-style: none;
     display: flex;
-    padding: 1em;
     justify-content: space-between;
     flex-direction:row;
     gap: 2em;

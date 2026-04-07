@@ -13,6 +13,7 @@
     --radius: 0.6em;
     --transition: 0.3s ease;
 }
+/* table */
 .table-container{
     width: 100%;
     display: flex;
@@ -28,10 +29,11 @@ h2{
     color: var(--primary);
 }
 #tran_photo{
-     width: 5em;
+    width: 5em;
     height: auto;
 }
 .li_transaction{
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -40,7 +42,7 @@ h2{
     list-style-type: none;
     padding: 1em;
     padding-right: 1.6em;
-     gap: 0.5em;
+    gap: 0.5em;
     
 }
 
