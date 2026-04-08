@@ -301,6 +301,11 @@ main{
 #footer_p{
     text-align:center;
 }
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Hamburger menu */
 .menu-icon {
     display: none;
