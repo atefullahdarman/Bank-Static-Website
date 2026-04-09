@@ -60,10 +60,6 @@ main{
 }
 
 .menu li a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
     color:var(--dark);
     text-align: center;
     text-decoration: none;
@@ -95,7 +91,6 @@ main{
     display: flex;
     align-items: center;
     gap: 1em;
-    margin-left:5em;
     flex-wrap: wrap;
   
 }
@@ -353,7 +348,7 @@ main{
 }
 
 /* mob */
-@media (max-width: 41em) {
+@media (max-width: 35em) {
     .menu{
         flex-direction: column;
         gap: 1em;
@@ -374,8 +369,11 @@ main{
         text-align: center;
         padding: 1em 0;
     }
+    .buttons{
+        display: none;
+    }
      
-    #menu-toggle:checked ~ .menu {
+    #menu-toggle:checked ~ .menu,#menu-toggle:checked ~.buttons {
         display: flex;
     }
 
