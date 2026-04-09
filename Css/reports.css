@@ -14,24 +14,68 @@
     --transition: 0.3s ease;
 }
 
-h2{
-    color: var(--primary);
-}
-.loan_section{
-     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: var(--secondary);
-    font-size:large;
-    list-style-type: none;
-    padding: 1em;
-    padding-right: 1.6em;
-    gap: 0.5em;
-}
-
-#loan{
+#report_photo{
     width: 5em;
     height: auto;
+}
+
+.report{
+    padding: 1.4em;
+    font-size: large;
+}
+
+.report h2{
+    color: var(--primary);
+}
+
+.report ul li{
+    color: var(--secondary);
+}
+.cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    gap: 2em;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding:0.6em;
+    border-radius: var(--radius);
+
+}
+
+.card{
+    width: 15em;
+}
+#card_h2{
+    text-align: center;
+    color: var(--primary);
+}
+
+.card h3{
+    color: var(--primary);
+}
+
+.card p{
+    color: var(--secondary);
+}
+
+#card_photo{
+    width: 4em;
+}
+
+#reportType{
+    background:linear-gradient(var(--danger),var(--light));
+    padding: 0.5em;
+    border-radius: var(--radius);
+    color:var(--dark);
+    font-weight: bold;
+}
+#reportType option{
+   background: var(--primary); 
+
 }
 .table-container{
     width: 100%;
@@ -44,14 +88,12 @@ h2{
     overflow-x: auto;
 }
 
-
 table{
   font-size:medium;
   width:100%;
   border-collapse:collapse;
   box-shadow: 0em 0.5em 1em var(--dark);
   border-radius:var(--radius);
-  
 }
 
 th{
@@ -66,14 +108,13 @@ td{
   text-align:left;
   color: var(--dark);
   border-top:2px solid var(--gray);
-  
 }
 
 tr:hover{
   background:var(--gray);
 }
 
-.approve-btn{
+.view-btn{
     padding: 0.5em;
     border: none;
     background:var(--orange1);
@@ -82,34 +123,24 @@ tr:hover{
     cursor: pointer;
     font-weight: bold;
 }
-.approve-btn:hover{
+
+.view-btn:hover{
     background:var(--orange2);
 }
 
-.reject-btn{
+.export-btn{
     padding: 0.5em;
+    width: 6em;
     border: none;
-    border-radius: var(--radius);
-    width: 3em;
-    background:var(--red);
-    width: 3.5em;
-    cursor: pointer;
-    font-weight:bold;
-}
-.reject-btn:hover{
-    background:var(--danger);
-}
-
-.view-btn{
-    padding: 0.5em;
-    border: none;
-    border-radius: var(--radius);
-    width: 3em;
     background:var(--accent);
     width: 3.5em;
-    cursor: pointer;
-    font-weight:bold;
+    border-radius: var(--radius);
+    cursor: pointer; 
+    font-weight: bold;
+
 }
-.view-btn:hover{
-    background:var(--accent1);
+
+.export-btn:hover{
+    background: var(--accent1);
 }
+

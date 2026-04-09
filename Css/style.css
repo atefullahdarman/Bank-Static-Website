@@ -34,22 +34,20 @@ main{
     background: linear-gradient(var(--primary),var(--secondary));
     color:var(--light);
     padding:0.6em;
-    border-radius: 0.6em;  
-}
-
-.neve_div{
-    width: 100;
-    position: sticky;
+    border-radius: 0.6em;
+    position:sticky;
     top: 0;
     z-index: 1000;
+  
 }
+
 .nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
     position: sticky;
-  
+
 }
 
 .menu{
@@ -62,10 +60,14 @@ main{
 }
 
 .menu li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     color:var(--dark);
     text-align: center;
     text-decoration: none;
-     padding: 0.3em;
+    padding: 0.3em;
     font-weight: bold;
     transition: var(--transition);
     background: linear-gradient(var(--primary),var(--gray));
@@ -90,13 +92,20 @@ main{
     height: auto;
 }
 .buttons{
-  display: flex;
-  gap: 1em;
-  margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left:5em;
+    flex-wrap: wrap;
+  
 }
 
+#li_button a{
+    background: none;
+}
 .btn{
-    padding: 0.6em 1.2em;
+    padding: 0.6em;
+    width: 6em;
     border: none;
     cursor: pointer;
     border-radius: var(--radius);
@@ -344,7 +353,7 @@ main{
 }
 
 /* mob */
-@media (max-width: 33em) {
+@media (max-width: 41em) {
     .menu{
         flex-direction: column;
         gap: 1em;

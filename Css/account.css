@@ -33,7 +33,7 @@
 .h2_button_li{
     padding: 1em;
     color: var(--primary);
-    font-size: medium;
+    font-size:large;
     margin-right: 0.7em;
     display: flex;
     flex-direction:column;
@@ -45,7 +45,7 @@
     color: var(--secondary);
 }
 table{
-  font-size:small;
+  font-size:medium;
   width:100%;
   border-collapse:collapse;
   box-shadow: 0em 0.5em 1em var(--dark);

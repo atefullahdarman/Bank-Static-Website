@@ -21,7 +21,7 @@ h2{
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--secondary);
-    font-size:medium;
+    font-size:large;
     list-style-type: none;
     padding: 1em;
     padding-right: 1.6em;
@@ -46,11 +46,11 @@ h2{
 }
 
 table{
-  font-size:small;
-  width:100%;
-  border-collapse:collapse;
-  box-shadow: 0em 0.5em 1em var(--dark);
-  border-radius:var(--radius);
+    font-size:medium;
+    width:100%;
+    border-collapse:collapse;
+    box-shadow: 0em 0.5em 1em var(--dark);
+    border-radius:var(--radius);
 }
 
 th{

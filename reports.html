@@ -8,11 +8,11 @@
   <meta name="keywords" content="bank,online,transactions,money,account,loan,icons,report,customer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> بانک مدیریت سیسټم </title>
-  <link rel="stylesheet" href="./Css/loans.css">
   <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" href="./Css/reports.css">
 </head>
 <body>
-<main> 
+    <main>      
 <!-- heder -->
     <header class="header">
     <nav class="nav">
@@ -28,121 +28,128 @@
         <li><a href="transaction.html">معاملې <img src="./images/transacti.png" alt="transaction" class="icons"></a></li>
         <li><a href="customers.html">مشتریان <img src="./images/cust.png" alt="customer" class="icons"></a></li>
         <li><a href="loans.html">پورونه <img src="./images/loane.png" alt="loan" class="icons"></a></li>
-        <li><a href="reports.html">راپورونه <img src="./images/repo.png" alt="report" class="icons"></a></li>    
+        <li><a href="reports.html">راپورونه <img src="./images/repo.png" alt="report" class="icons"></a></li>
         <li><a href="about_me.html">زموږ په اړه<img src="./images/info.png" alt="about" class="icons"></a></li> 
         <div class="buttons">
         <button class="btn" id="btn1"><b>ننوتل</b></button>
         <button class="btn" id="btn2"><b>وتل</b></button>
         </div>   
+
     </ul>
-    
+
     </nav>
 </header>
-
-<div class="loan_section">
-    <img src="./images/loan.png" alt="loan photo" id="loan">
-    <h2>د پور مدیریت</h2>
-
+<section class="report">
+    <img src="./images/health-check.png" alt="report photo" id="report_photo">
+    <h2>د راپور جوړونه</h2>
     <ul>
-        <li>مشتریان کولی شی د پور غوښتنه وکړی داړینو معلوماتو په وړاندې کولو سره</li>
-        <li>کارکوونکی به د پور غوښتنی وڅېړی او اډمین ته به یی واستوي</li>
-        <li>ډمین به د اړتیا پر بنسټ د پور غوښتنه ومنی یا رد کړي</li>
-  </ul>
-</div>
+       <li>اډمین به کولی شی ورځنی، میاشتنی، او کلنی مالی راپورونه جوړ کړي</li>
+        <li> په راپورونو کی به د معاملو، پورونو، او د مشتریانو خالصه معلومات شامل وي</li>
+        <li>کارکوونکی به یوازی محدودو راپورونوته السرسی لري</li>
+    </ul>
 
- <section class="table-container">
+</section>
+<h2 id="card_h2">ټول راپورونه</h2>
+
+<section class="cards">
+       
+    <div class="card">
+        <img src="./images/transfer.png" alt="photo" id="card_photo">
+        <h3> ټولی کلنی معاملی</h3>
+        <p>3200</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/transacti.png" alt="photo" id="card_photo">
+        <h3>دیدی میاشتی معاملی</h3>
+        <p>266</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/revenue.png" alt="photo" id="card_photo">
+        <h3>ټوټل عواید</h3>
+        <p>1600000 افغانی</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/customer-satisfaction.png" alt="photo" id="card_photo">
+        <h3>د ټول مشتریانو شمیر</h3>
+        <p>3100</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/venture-capital.png" alt="photo" id="card_photo">
+        <h3>قبول شوی پورونه</h3>
+        <p>80</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/check.png" alt="photo" id="card_photo">
+        <h3>نوی اکونتونه</h3>
+        <p>50</p>
+    </div>   
+</section>
+
+<section class="table-container">
+
+    <label for="reportType">راپور انتخاب کړي:</label>
+    <select id="reportType">
+        <option>ورځنی </option>
+        <option>میاشتی</option>
+        <option>کلنی</option>
+    </select>
+   
     <table>
         <thead>
             <tr>
-                <caption><b>د پور غوښتنه</b></caption>
-                <th>د پور نمبر</th>
-                <th>مشتری</th>
-                <th>اندازه</th>
+                <caption><b> مالی راپور</b></caption>
+                <th>ریفورټ ایډي</th>
+                <th>نوعه</th>
                 <th>تاریخ</th>
-                <th>حالت</th>
+                <th>ټولی معاملی</th>
+                <th>ټول عواید</th>
                 <th>عمل</th>
             </tr>
-        </thead>
-
-        <tbody>
+      </thead>
+      <tbody>
             <tr>
-                <td>L1001</td>
-                <td>عاطف</td>
-                <td>افغانی 50000</td>
+                <td>R1001</td>
+                <td>ورځنی</td>
                 <td>2026-03-09</td>
-                <td>انتظار کی</td>
+                <td>220</td>
+                <td>افغانی 150000</td>
                 <td>
                     <button class="view-btn">کتل</button>
-                    <button class="approve-btn">اجازه</button>
-                    <button class="reject-btn">لغوه</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>L1002</td>
-                <td>نومان</td>
-                <td>افغانی 35000</td>
-                <td>2026-03-08</td>
-                <td>قبول شو</td>
-                <td>
-                    <button class="view-btn">کتل</button>
-                    <button class="approve-btn">اجازه</button>
-                    <button class="reject-btn">لغوه</button>
+                    <button class="export-btn">صادرول</button>
                 </td>
             </tr>
             <tr>
-                <td>L1003</td>
-                <td>ذکی الله</td>
-                <td>افغانی 72000</td>
-                <td>2026-03-07</td>
-                <td>لغوه</td>
+                <td>R1002</td>
+                <td>میاشتی</td>
+                <td>2026-02</td>
+                <td>9200 </td>
+                <td>افغانی 1250000</td>
                 <td>
                     <button class="view-btn">کتل</button>
-                    <button class="approve-btn">اجازه</button>
-                    <button class="reject-btn">لغوه</button>
+                    <button class="export-btn">صادرول</button>
                 </td>
             </tr>
             <tr>
-                <td>L1004</td>
-                <td>بلال</td>
-                <td>افغانی 30600</td>
-                <td>2026-07-11</td>
-                <td>قبول شو</td>
+                <td>R1003</td>
+                <td>کلنی</td>
+                <td>2025</td>
+                <td>110500</td>
+                <td>افغانی 15000000</td>
                 <td>
                     <button class="view-btn">کتل</button>
-                    <button class="approve-btn">اجازه</button>
-                    <button class="reject-btn">لغوه</button>
-                </td>
-            </tr>
-            <tr>
-                <td>L1005</td>
-                <td>فرهاد</td>
-                <td>افغانی 30000</td>
-                <td>2026-01-18</td>
-                <td>انتظار کی</td>
-                <td>
-                    <button class="view-btn">کتل</button>
-                    <button class="approve-btn">اجازه</button>
-                    <button class="reject-btn">لغوه</button>
-                </td>
-            </tr>
-            <tr>
-                <td>L1006</td>
-                <td>عمران</td>
-                <td>افغانی 70000</td>
-                <td>2026-06-17</td>
-                <td>لغوه</td>
-                <td>
-                    <button class="view-btn">کتل</button>
-                    <button class="approve-btn">اجازه</button>
-                    <button class="reject-btn">لغوه</button>
+                    <button class="export-btn">صادرول</button>
                 </td>
             </tr>
       </tbody>
+
     </table>
 </section>
 
-</div>
 <!-- footer -->
 <footer class="footer">
   <div class="Social_link">
@@ -167,3 +174,5 @@
 </main>
 </body>
 </html>
+
+
