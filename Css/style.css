@@ -91,7 +91,6 @@ main{
     display: flex;
     align-items: center;
     gap: 1em;
-    flex-wrap: wrap;
   
 }
 
@@ -99,8 +98,8 @@ main{
     background: none;
 }
 .btn{
-    padding: 0.6em;
-    width: 6em;
+    padding: 0.6em 0.7em;
+    width: 4em;
     border: none;
     cursor: pointer;
     border-radius: var(--radius);
