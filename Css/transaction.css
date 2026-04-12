@@ -38,7 +38,7 @@ h2{
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--secondary);
-    font-size:large;
+    font-size:medium;
     list-style-type: none;
     padding: 1em;
     padding-right: 1.6em;
@@ -47,7 +47,7 @@ h2{
 }
 
 table{
-  font-size:medium;
+  font-size:1em;
   width:100%;
   border-collapse:collapse;
   box-shadow: 0em 0.5em 1em var(--dark);
