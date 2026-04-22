@@ -1,6 +1,6 @@
 :root{
-   --primary: #218b8a;
-    --secondary: #2b9fb4;
+   --primary:rgb(219, 141, 154);
+    --secondary: pink;
     --accent: #00c853;
     --accent1:#15803d;
     --danger: #b72826;
@@ -37,7 +37,7 @@
     display: flex;
     flex-direction:row;
     gap: 2em;
-    justify-content:center;
+    justify-content:start;
     flex-wrap: wrap;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -144,3 +144,9 @@ tr:hover{
     background: var(--accent1);
 }
 
+@media (max-width: 35em) {
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+}

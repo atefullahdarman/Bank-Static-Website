@@ -1,6 +1,6 @@
 :root{
-   --primary: #218b8a;
-    --secondary: #2b9fb4;
+    --primary:rgb(219, 141, 154);
+    --secondary: pink;
     --accent: #00c853;
     --accent1:#15803d;
     --danger: #b72826;
@@ -20,14 +20,9 @@
     box-sizing: border-box;    
 }
 
-@font-face {
-    font-family: 'NotoKufiArabic';
-    src: url('../founts/NotoKufiArabic-Regular.ttf') format('truetype');
-    font-weight: bold;
-}
 body,button{
     font-size:0.8rem;
-   font-family: 'NotoKufiArabic', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main{
@@ -54,7 +49,9 @@ main{
     position: sticky;
 
 }
-
+.icons{
+    width: 0.9em;
+}
 .menu{
     list-style: none;
     display: flex;
@@ -89,10 +86,7 @@ main{
     margin-right: 1.2em;
     
 }
-.icons{
-    width: 1em;
-    height: auto;
-}
+
 .buttons{
     display: flex;
     align-items: center;
@@ -226,12 +220,12 @@ main{
 .card{
     display: flex;
     flex-direction: column;
-    background:linear-gradient(var(--gray),var(--light));
+    background:linear-gradient(var(--primary),var(--light));
     border-radius: var(--radius);
     padding: 1.4em;
     align-items: center;
     gap: 0.8em;
-    box-shadow: 0 0.3em 0.6em var(--dark);
+    box-shadow: 0 0.3em 0.4em var(--dark);
     transition: var(--transition);
 }
 
@@ -258,12 +252,17 @@ main{
     background:linear-gradient(var(--gray),var(--danger));
     transition: var(--transition);
 }
-    
+    /* video section */
 .video_contener{
     position: relative;
     width: 100%;
     max-width: 100%;
     padding: 1em;
+    /* border: 2px solid green; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     
 }
 
@@ -281,6 +280,7 @@ main{
     background-color: var(--primary);
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    align-items: center;
     gap: 1.5em;
     padding: 1em;
     border-radius: var(--radius);
@@ -294,7 +294,7 @@ main{
     border-radius: var(--radius);
     padding: 1em;
     color: var(--dark);
-    align-items: center;
+    align-items:center;
     box-shadow: 0 0.3em 0.6em var(--dark);
     transition: var(--transition);
     /* margin-top: 5em; */
