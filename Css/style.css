@@ -239,6 +239,39 @@ main{
     border-radius: var(--radius);
 }
 
+
+.photo_headder{
+    width: 100%;
+    height: auto;
+   border-radius: var(--radius);
+    
+    
+}
+.declere{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background:linear-gradient(var(--primary),var(--gray)) ;
+    padding: 0.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: var(--radius);
+}
+.section_photo_img{
+    background: var(--primary);
+    border-radius: var(--radius);
+    margin: 0.8em;
+    box-shadow: 0em 0.2em 0.4em var(--dark);
+}
+.crick_photo{
+    width: 9em;
+    gap: 2em;
+    transition: var(--transition);
+
+}
+.crick_photo:hover{
+    transform: scale(0.9);
+}
 #Features_Button{
     background:linear-gradient(var(--primary),var(--gray));
     padding: 0.5em;
