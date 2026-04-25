@@ -1,6 +1,6 @@
 :root{
-    --primary:rgb(219, 141, 154);
-    --secondary: pink;
+    --primary: #218b8a;
+    --secondary: #2b9fb4;
     --accent: #00c853;
     --accent1:#15803d;
     --danger: #b72826;
@@ -239,7 +239,7 @@ main{
     border-radius: var(--radius);
 }
 
-
+/* section declear */
 .photo_headder{
     width: 100%;
     height: auto;
@@ -252,7 +252,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     background:linear-gradient(var(--primary),var(--gray)) ;
-    padding: 0.2em;
+    padding: 1.4em;
     margin-top: 0;
     margin-bottom: 0;
     border-radius: var(--radius);
